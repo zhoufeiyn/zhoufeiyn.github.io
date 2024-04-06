@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Project">
+  <meta name="keywords" content="Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feiyan Zhou: Project</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Fast distributed Feeder Automation fault handling strategies in power distribution network</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<div class="container is-max-desktop">
+  <!-- Abstract. -->
+ <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <div class="content has-text-justified">
+        <p>
+         Feeder automation（FA）, as a core component of the distribution automation system, plays a crucial role in quickly
+          isolating faults and restoring power supply to non-faulty areas, thereby enhancing the reliability of power supply.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-fullwidth">
+    <figure>
+    <img class="nav_logo2" src="./static/images/structure.png" style="width:35em; margin-top:3px">
+    <figcaption style="font-weight: bold; font-style: normal;">Structure of the primary feeder simulation system</figcaption>
+    </figure>
+    </div>
+    </div>
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <div class="content has-text-justified">
+        <p>
+         Distributed FA does not require decision-making by the master or substation. It primarily detects differences in 
+          characteristics such as short-circuit current on both sides of the faulted section and ground faults through the
+          terminals themselves. Terminals establish a peer-to-peer communication network and assist each other in decision-making,
+          ultimately automating fault location, isolation, and restoration of power supply in non-fault areas of the feeder. Additionally, 
+          it reports the processing procedure and results back to the distribution automation master station.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-fullwidth">
+    <figure>
+    <img class="nav_logo2" src="./static/images/ptp.png" style="width:35em; margin-top:3px">
+    <figcaption style="font-weight: bold; font-style: normal;">Architecture of a pear to pear communication network</figcaption>
+    </figure>
+    </div>
+    </div>
+
+
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <div class="content has-text-justified">
+        <p>
+       A complete fast-acting distributed FA action logic mainly includes seven key functional logics such as isolation, 
+          first-switch undervoltage protection, restoration, switch refusal judgment, malfunction protection, locking, and successful isolation judgment.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <div class="content has-text-justified">
+        <p>
+       <b>EXAMPLE:</b>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <div class="content has-text-justified">
+        <p>
+       <b>(1) The isolation function:</b> The action logic in figure below, operates as follows: when the distributed FA isolation function is engaged and communication is
+          normal, it acts after a delay once the conditions for action are met. This primarily involves two tripping actions: one upstream and one downstream of 
+          the fault point.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-fullwidth">
+    <figure>
+    <img class="nav_logo2" src="./static/images/isolation.png" style="width:35em; margin-top:3px">
+    <figcaption style="font-weight: bold; font-style: normal;">The logic of Fast FA isolation function</figcaption>
+    </figure>
+    </div>
+    </div>
+   
+   <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <div class="content has-text-justified">
+        <p>
+         <b>(2) The switch refusal judgment function:</b> If a switch that needs to be opened exhibits a refusal to operate, action from its adjacent switches is required
+          to expand the isolation range and achieve the excision of the faulted area. The functional logic, as shown in figure below.
+        </p>
+      </div>
+    </div>
+  </div>
+    <div class="columns is-centered has-text-centered">
+    <div class="column is-fullwidth">
+    <figure>
+    <img class="nav_logo2" src="./static/images/refuse.png" style="width:35em; margin-top:3px">
+    <figcaption style="font-weight: bold; font-style: normal;">The logic of Fast FA switch refusal judgment function</figcaption>
+    </figure>
+    </div>
+    </div>
+
+   <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <div class="content has-text-justified">
+        <p>
+          <b>Experiment of Main Line Failure:</b>
+        </p>
+      </div>
+    </div>
+  </div>
+   <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <div class="content has-text-justified">
+        <p>
+          we use a 3 DTUs (each with 3 units) connected distributed FA dynamic mode testing system to introduce the testing process.
+          The simplified primary feeder structure of the system is shown in Figure below. Each unit of DTU is connected to the circuit
+          breaker 1-11,the circuit breaker 6 is opened to be used as a loop breaker. The peer to peer communication network has been established among the DTUs.
+        </p>
+      </div>
+    </div>
+  </div>
+      <div class="columns is-centered has-text-centered">
+    <div class="column is-fullwidth">
+    <figure>
+    <img class="nav_logo2" src="./static/images/normal_sys.png" style="width:35em; margin-top:3px">
+    <figcaption style="font-weight: bold; font-style: normal;">The primary feeder system normal operating status</figcaption>
+    </figure>
+    </div>
+    </div>
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <div class="content has-text-justified">
+        <p>
+          In order to simulate the short-circuit condition of main line, the system inputs the BC phase-to-phase short-circuit fault at G3 shown in Figure below. 
+          At this time, an overcurrent fault occurs downstream of the terminal (#2), #2 and #5 opens the connected breaker to isolate the fault section. The
+          test master station receives the successful fault isolation remote signals sent by #2 and #5. After the fault is isolated, the loop breaker 6 is 
+          still open, and the non-faulty area downstream of #7 is powered off. When #6 detects the adjacent breaker isolation function is successfully performed,
+          it will calculate the load of #7 to be transferred is 0.345A, which is less than the overload threshold 5A, and will closed breaker 6 to restore power 
+          to the downstream of #7. By observing the breakers action of 2, 5 and 6 and the remote signaling of the isolation and restoration of the distributed FA
+          and the remote signaling of the breaker’s opening and closing position, it is judged that the distributed FA action of the terminal is successfully implemented.
+       </p>
+      </div>
+    </div>
+  </div>
+      <div class="columns is-centered has-text-centered">
+    <div class="column is-fullwidth">
+    <figure>
+    <img class="nav_logo2" src="./static/images/act_sys.png" style="width:35em; margin-top:3px">
+    <figcaption style="font-weight: bold; font-style: normal;">Operational status of main line failure condition</figcaption>
+    </figure>
+    </div>
+    </div>
+</body>
+</html>
