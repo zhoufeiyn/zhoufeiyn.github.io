@@ -47,7 +47,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Dynamic Simulation Systems for Urban Intelligent Distribution Power Network </h1>
+          <h1 class="title is-1 publication-title">Learning to Play: Game Generation Model with Action and Memory </h1>
         </div>
       </div>
     </div>
@@ -62,9 +62,11 @@
     <div class="column is-four-fifths">
       <div class="content has-text-justified">
         <p>
-          We design an urban intelligent distribution power network dynamic simulation system combining an authentic
-          physical frame with simulated digital network by employing topology recognition and plug-and-play self-registration
-          methods. The entire system can be monitored and maintained automatically by one single diagram from a cloud-based platform.
+          Traditional games are built with engines such as Unity or Unreal, which rely heavily on manually crafted logic, assets, and rules.
+          Recently, diffusion models have shown strong robustness in long-sequence generation, and researchers have begun applying them to generate
+          interactive game videos. However, current approaches still face challenges of low frame fidelity, inconsistent rendering that fails to match
+          player actions, and frame to frame smooth rendering so that the gameplay could keep interactive.
+          (<a href="https://github.com/zhoufeiyn/ltpclean" target="_blank">View on GitHub</a>)
         </p>
       </div>
     </div>
@@ -72,14 +74,8 @@
   <div class="columns is-centered has-text-centered">
     <div class="column is-fullwidth">
     <figure>
-    <img class="nav_logo2" src="./static/images/urban_platform.jpg" style="width:45em; margin-top:3px">
-    <figcaption style="font-weight: bold; font-style: normal;">The physical frame of urban intelligent distribution power network</figcaption>
-    </figure>
-    </div>
-    <div class="column is-fullwidth">
-    <figure>
-    <img class="nav_logo2" src="./static/images/master_station.jpg" style="width:45em; margin-top:3px">
-    <figcaption style="font-weight: bold; font-style: normal;">The master station platform of the network with monitoring and maintaining function</figcaption>
+    <img class="nav_logo2" src="./static/images/structure.png" style="width:45em; margin-top:3px">
+    <figcaption style="font-weight: bold; font-style: normal;">Model Structure</figcaption>
     </figure>
     </div>
   </div>
@@ -90,20 +86,19 @@
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">1. Plug and Play Technology</h2>
+        <h2 class="title is-3">1. Current Progress</h2>
         <div class="content has-text-justified">
           <p>
-            The plug and play mechanism for smart distribution devices based on the MQTT communication protocol. Process: (1) Installation of
-            downstream smart devices, with the devices sending modulation signals to describe their information to the terminal unit; (2) the 
-            terminal actively registers this device information to the master station; (3) device information automatically goes online(in the
-            master station). 
+            we build up a game-generative framework that supports: efficient latent representation of visual content via Variational Autoencoder,
+            a robust temporal modeling and conditional generation pipeline using latent diffusion with memory, and a light weight DiT structure that could
+            keep frame to frame render consistency in real time.
           </p>
         </div>
         <div class="columns is-centered has-text-centered">
         <div class="column is-fullwidth">
     <figure>
-    <img class="nav_logo2" src="./static/images/PAP.png" style="width:33em; margin-top:3px">
-    <figcaption style="font-weight: bold; font-style: normal;">The scheme of Plug and Play </figcaption>
+    <img class="nav_logo2" src="./static/images/current.png" style="width:70em; margin-top:3px">
+    <figcaption style="font-weight: bold; font-style: normal;">current progress</figcaption>
     </figure>
         </div>
         </div>
@@ -117,23 +112,23 @@
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">2. Topology Recognition Technology</h2>
-        <div class="content has-text-justified">
-          <p>
-            The underlying devices emit characteristic current signals, which are identified by the smart terminal to generate
-            downstream topology files. The master station completes the topology mapping and associates it with the device information, 
-            accomplishing the automatic drawing of the physical network on the cloud platform topology diagram.
-          </p>
-      
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-fullwidth">
-             <figure>
-          <img class="nav_logo2" src="./static/images/TRT.png" style="width:45em; margin-top:3px">
-          <figcaption style="font-weight: bold; font-style: normal;">The scheme of Topology Recognition</figcaption>
-          </figure>
-            </div>
+        <h2 class="title is-3">2. To DO List</h2>
+          <div class="content has-text-justified">
+            <h3>🚧 In Progress</h3>
+            <ul>
+              <li><strong>PPO Policy AI Agent Training</strong>: Implementing Proximal Policy Optimization algorithms for intelligent agent behavior learning and large-scale data collection</li>
+              <li><strong>VAE Model Enhancement</strong>: Optimizing Variational Autoencoder architecture to improve image encoding and decoding quality</li>
+              <li><strong>Large-scale Diffusion Model Training</strong>: Loading extensive datasets to train robust diffusion models for high-quality game content generation</li>
+            </ul>
+
+            <h3>🔄 Development Pipeline</h3>
+            <ul>
+              <li><strong>Data Collection</strong>: Automated gameplay data gathering through AI agent interactions</li>
+              <li><strong>Model Optimization</strong>: Continuous improvement of VAE and Diffusion DiT architectures</li>
+              <li><strong>Performance Evaluation</strong>: Comprehensive testing and validation of generated content quality</li>
+            </ul>
           </div>
-        </div>
+
       </div>
     </div>
   </div>
